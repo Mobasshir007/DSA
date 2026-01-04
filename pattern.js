@@ -40,9 +40,8 @@ for(i=0; i<n; i++){
 10101
  */
 let res= ""
-for(i=0;i<n; i++){
+for(i=1;i<n; i++){
 
- 
 res += i%2
 console.log(res)
  }
@@ -53,12 +52,63 @@ console.log(res)
 3 3 3
 4 4 4 4
 5 5 5 5 5
- */
-let ne=" "
+*/
+
 for(i=0;i<n;i++){
-    for(j=1;j<=i; j++){
-        ne += j+i
+    let ne=" "
+    for(j=0;j<=i; j++){
+       ne +=i+1
     }
 console.log(ne);
-
 }
+
+// Q5.
+// 1
+// 12
+// 123
+// 1234
+// 12345
+for(i=0;i<n; i++)
+{
+    let upd=" ";
+    for(j=0; j<=i;j++){
+    upd += j+1
+
+    }
+    console.log(upd)
+}
+
+/*Q6. 
+5
+44
+333
+2222
+11111
+ */
+for(i=n; i>0;i--){
+    let up=""
+    for(j=0; j<=n-i;j++){
+        up +=i
+    }
+    console.log(up)
+}
+/*
+Q7. 
+    *
+   **
+  ***
+ ****
+*****
+*/
+for(i=0; i<n;i++){
+    pattern="";
+    // spaces add karne ke liye loop
+    for(space=1; space<n-i; space++){
+        pattern+=" "
+    }
+    for(j=0;j<=i;j++){
+        pattern +="*"
+    }
+    console.log(pattern)
+}
+
