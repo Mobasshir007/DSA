@@ -112,3 +112,20 @@ for(i=0; i<n;i++){
     console.log(pattern)
 }
 
+// Q8. 
+
+
+for (let i = 1; i <= n; i++) {
+  let pattern = "";
+
+  for (let j = 1; j <= n; j++) {
+    // first row, last row, first column, last column
+    if (i === 1 || i === n || j === 1 || j === n) {
+      pattern += "*";
+    } else {
+      pattern += " ";
+    }
+  }
+
+  console.log(pattern);
+}
